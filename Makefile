@@ -7,7 +7,7 @@ help:
 	@echo "Make targets for IAC TestKit on Ubuntu:"
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-build-image: test-image ## Build the IAC TestKit for Ubuntu from Dockerfile.
+build-image: test-dockerfile ## Build the IAC TestKit for Ubuntu from Dockerfile.
 	@docker build . -t gtrummell/iac-testkit-$(shell cat ./DISTRO):$(shell cat ./VERSION) -t gtrummell/iac-testkit-$(shell cat ./DISTRO):latest
 
 global-clean: ## Sanitize the workspace.
