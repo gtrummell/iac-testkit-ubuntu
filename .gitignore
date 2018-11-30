@@ -1,9 +1,3 @@
-# DOCKERFILE IGNORED SO YOU DON'T ACCIDENTALLY COMMIT IT!
-# Dockerfile is copied into place by each "flavor"
-Dockerfile
-DISTRO
-VERSION
-
 # Integrated Development Environments
 .idea/
 tmp/
