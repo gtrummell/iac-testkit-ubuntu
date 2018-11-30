@@ -1,6 +1,8 @@
 Infrastructure-as-Code TestKit for Ubuntu
 =========================================
 
+[![Build Status](https://travis-ci.org/gtrummell/iac-testkit-ubuntu.svg?branch=master)](https://travis-ci.org/gtrummell/iac-testkit-ubuntu)
+
 This repository contains code necessary to build a Docker container for use
 with containerized testing of Infrastructure-as-Code.  This image mimics a
 full-size Ubuntu instance (i.e. EC2) and is pre-built with:
