@@ -1,5 +1,5 @@
-Infrastructure-as-Code TestKit for Ubuntu
-=========================================
+Infrastructure-as-Code Test Kit
+===============================
 
 [![Build Status](https://travis-ci.org/gtrummell/iac-testkit-ubuntu.svg?branch=master)](https://travis-ci.org/gtrummell/iac-testkit-ubuntu)
 
