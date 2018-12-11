@@ -24,7 +24,6 @@ RUN apt-get update -qq &&\
         gzip \
         jq \
         python-pip \
-        python3-pip \
         software-properties-common \
         unzip \
         wget &&\
@@ -42,7 +41,6 @@ RUN apt-get update -qq &&\
     rm -rf /var/lib/apt/lists/* &&\
     ln -fs /usr/share/zoneinfo/Etc/UTC /etc/localtime &&\
     ln -fs /usr/share/zoneinfo/Etc/UTC /etc/timezone &&\
-    pip3 install --upgrade -qqq -r requirements.txt &&\
     pip install --upgrade -qqq -r requirements.txt &&\
     wget -q -O terraform.zip https://releases.hashicorp.com/terraform/0.11.10/terraform_0.11.10_linux_amd64.zip &&\
     unzip -o -qq terraform.zip -d /usr/bin/ &&\
