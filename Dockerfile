@@ -19,6 +19,7 @@ RUN apt-get update -qq &&\
         awscli \
         ca-certificates \
         curl \
+        gpg \
         gzip \
         jq \
         python-pip \
