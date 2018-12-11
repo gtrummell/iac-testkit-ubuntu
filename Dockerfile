@@ -20,6 +20,7 @@ RUN apt-get update -qq &&\
         ca-certificates \
         curl \
         gpg \
+        gpg-agent \
         gzip \
         jq \
         python-pip \
