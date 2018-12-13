@@ -1,0 +1,6 @@
+# IDE Files
+.idea/
+tmp/
+temp/
+.git
+.gitignore
