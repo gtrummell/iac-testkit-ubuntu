@@ -18,7 +18,7 @@ clean: ## Sanitize the workspace
 	-docker rmi -f gtrummell/iac-testkit-$(distro):$(version)
 
 get-deps: ## Retrieve dependencies
-	@docker pull centos:$(version)
+	@docker pull $(distro):$(version)
 
 push-image: ## Push the IAC Test Kit to Dockerhub
 	docker push gtrummell/iac-testkit-$(distro):latest && \
